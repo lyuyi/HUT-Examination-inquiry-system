@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>湖南工业大学考试计划查询网</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>    
+  <section class="container">
+  <div class="logo"></div>
+  <div class="login"><a href="login.html"><span><img src="img/right.png">Login</span></a></div>
+  	<form onsubmit="submitFn(this, event);">
+      <div class="search-wrapper">
+        <div class="input-holder">
+          <input type="text" class="search-input" id="name" placeholder="请输入学号" />
+          <button class="search-icon" onmouseover ="searchToggle(this, event);"><span></span></button>
+        </div>
+
+        <span class="close" onclick="searchToggle(this, event);"></span>
+        <div class="result-container">
+        </div>
+      </div>
+      <div id="open">
+          <h1>错误</h1>
+          <P>没有该学号信息</P>
+          <div id="close">x</div>
+        </div>
+    </form>
+  </section>
+  <div id="mask"></div>
+  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
